@@ -1,0 +1,123 @@
+ul,ol{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a,
+a:hover{
+  text-decoration: none;
+}
+/*左侧*/
+.aside{
+  width: 180px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #222D32;
+  z-index: 999;
+  transition: all 1s;
+  .nav a.current {
+    background-color: #1D1F21;
+    border-left: 3px solid #006699;
+  }
+  .nav a {
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    color: white;
+    padding-left: 40px;
+    border-left: 3px solid transparent;
+  }
+  .nav i {
+    margin-right: 5px;
+  }
+  .brand{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    background-color: #367FA9;
+    a{
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  .user{
+    padding-top: 30px;
+    img{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto ;
+    }
+    p{
+      font-size: 18px;
+      color: #fff;
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+  .nav{
+    margin-top: 30px;
+    ul{
+      li{
+        a{
+          height: 40px;
+          width: 100%;
+          line-height: 40px;
+          padding-left: 40px;
+          color: #fff;
+          }
+        .child{
+            a{
+              display: block;
+              padding-left: 60px;
+            }
+        }
+      }
+    }
+  }
+}
+.aside.hidemenu{
+  left: -180px;
+}
+.main{
+  padding-left: 180px;
+  height: 1000px;
+  transition: all 1s;
+  padding-top: 50px;
+}
+.main.hidemenu{
+  padding-left: 0px;
+}
+ .topbar{
+  width: 100%;
+  padding-left: 180px;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #3C8DBC;
+  transition: all 1s;
+  .icon_menu,
+  .icon_logout{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+  }
+ }
+ .topbar.hidemenu{
+   padding-left: 0px;
+ }
+.mt_20{
+  margin-top: 20px;
+}
+.text{
+  color: #A94442;
+}
